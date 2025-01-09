@@ -8,6 +8,11 @@ app.get("/", (req, res) => {
     });
 });
 
+app.get ('/products', (req, res) => {
+    res.json([{nome: 'blusa'}, {nome:'calça'}, {nome:'vestido'}])
+
+})
+
 const PORT = 3000
 
 app.listen(process.env.PORT || PORT, () => {
